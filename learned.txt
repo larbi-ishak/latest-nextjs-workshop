@@ -1,0 +1,43 @@
+TODO: 
+* more clear view about api/route
+* Middlware
+* internationalization i18n
+
+
+_prd      folders begins with underscore won't be included in routing
+
+layout.tsx , layouts are nested by default
+layout are server side components
+layout can fetch data
+
+only RootLayout can access html and body tags
+
+you can change routes programmatically using Links, redirect method or useRouter hook
+links is the go to and useRouter is the least advised
+
+you can use prefetching with Link element or router.prefetch()
+prefetching works only in production
+
+next js uses caching, partial rendering nad soft navigation ( by defalt browser makes a hard reload, but with next js no full page reload, app state is preserved only segements re rendering)
+
+
+export async function generateStaticParams() {
+  const {pages} =  require("../../../data/links.json")
+  
+  return pages.map((post: any) => ({
+    id: post.title,
+  }))
+}
+ export const dynamicParams = false //fallback previously
+
+@somethng used for parallel routing
+
+
+
+
+
+
+
+
+
+
