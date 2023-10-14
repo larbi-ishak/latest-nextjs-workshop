@@ -33,11 +33,14 @@ export async function generateStaticParams() {
 @somethng used for parallel routing
 
 
+its always recomended to fetch data on the server whenever its possible
 
+Fetching Data Where It's Needed
+If you need to use the same data (e.g. current user) in multiple components in a tree, you do not have to fetch data globally, nor forward props between components. Instead, you can use fetch or React cache in the component that needs the data without worrying about the performance implications of making multiple requests for the same data.
 
+This is possible because fetch requests are automatically memoized.
 
-
-
+always use parallel fetching Instead of sequential fetching
 
 
 
