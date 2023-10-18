@@ -42,5 +42,13 @@ This is possible because fetch requests are automatically memoized.
 
 always use parallel fetching Instead of sequential fetching
 
+you can use, tailwind
+you can import global style anywhere
+you can use css modules inside the component
 
+static assets in /public
+metadata for title , description ...
+
+you can use local, remote MDX
+and make a layout for them
 

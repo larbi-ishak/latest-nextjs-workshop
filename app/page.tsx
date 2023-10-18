@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 async function consumeStarWars(){
   // fetch on the server
@@ -14,6 +15,10 @@ export default async function Home() {
 
   return (
     <main >
+      {/*<Image src={"some link"} priority  alt="something" width={200} height={200} />
+       priority to Load more fast as LCP (largest content paintful)
+      */}
+
       just some thing
       {JSON.stringify(data)}
     </main>
